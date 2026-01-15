@@ -1,10 +1,12 @@
-<!doctype html>
-
+<!DOCTYPE html><html lang="ru">
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Video</title>
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>castluno's presentation</title>
+  
+
   <style>
     html, body {
       margin: 0;
@@ -18,9 +20,33 @@
       object-fit: contain;
       background: #000;
     }
+    /* Logo overlay */
+    .logo {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      width: 64px;
+      height: 64px;
+      z-index: 10;
+      opacity: 0.9;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Logo -->
+    <div class="logo">
+      <a href="https://castluno.github.io" target="_blank" aria-label="castluno home">
+        <img src="/media/pictures/logo_transparent.png" alt="logo" />
+      </a>
+  </div>
+
   <video src="video.webm" autoplay controls></video>
+
 </body>
 </html>
