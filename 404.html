@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>castluno's site</title>
+  <style>
+    :root {
+      --bg: #07140e;
+      --bg-soft: #0b2217;
+      --accent: #2eea8c;
+      --text: #e4fff1;
+      --muted: #7fb39a;
+    }* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1000px 500px at top left, #0f3a26, var(--bg));
+  color: var(--text);
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  image-rendering: auto;
+}
+
+.center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.main-text {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 28px;
+  color: var(--text);
+  text-shadow: 0 0 20px rgba(46, 234, 140, 0.25);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #123d28, var(--bg-soft));
+  border: 1px solid rgba(46, 234, 140, 0.45);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 18px rgba(46, 234, 140, 0.15);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(46, 234, 140, 0.35);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 14px rgba(46, 234, 140, 0.2);
+}
+
+.hint {
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+  </style>
+</head>
+<body>
+    <div class="logo">
+    <a href="https://castluno.github.io" target="_blank" aria-label="castluno home">
+      <img src="/media/pictures/logo_transparent.png" alt="logo" />
+    </a>
+  </div>  <!-- center of screen -->  <main class="center">
+    <div class="main-text">i do everything for fun.</div>
+<div class="buttons">
+  <a class="btn" href="https://github.com/castluno" target="_blank">github</a>
+  <a class="btn" href="https://castluno.t.me" target="_blank">tg channel</a>
+  <a class="btn" href="https://castluno.github.io/music">music</a>
+  <a class="btn" href="https://castluno.github.io/projects">software</a>
+  <a class="btn" href="https://castluno.github.io/contacts">contacts</a>
+</div>
+
+  </main>  <div class="hint">castluno · тёмно‑зелёный шум</div>
+</body>
+</html>
